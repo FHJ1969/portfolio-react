@@ -1,0 +1,77 @@
+@mixin linkButton(){
+  display: inline-block;
+  cursor: pointer;
+  font-size: 33px;
+  font-family: "Bebas Neue", sans-serif;
+  height: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  transition: 250ms ease-in-out;
+  flex-wrap: nowrap;
+}
+
+p{
+  color: white;
+}
+
+.projectContainer{
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  height: 100vh;
+  .projectContainer__CTA{
+    border-left: 8px solid white;
+    margin-left: 7%;
+    padding: 270px 30px;
+    width: 29%;
+    background-color: black;
+    .projectContainer__CTA--title1{
+      display: inline-block;
+      margin: 5px 0 -30px;
+      font-size: 170px;
+      font-family: "Bebas Neue", sans-serif;
+      -webkit-text-stroke: 2px white;
+      color: black
+    }
+    .projectContainer__CTA--title2{
+      font-family: "Poppins", sans-serif;
+      font-size: 31px;
+      margin-bottom: -30px;
+    }
+    .projectContainer__CTA--title3{
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+    }
+    .projectContainer__CTA--link{
+      margin: 100px 0 20px 3%;
+      @include linkButton();
+      color: black;
+      border: 3px solid black;
+      background-color: white;
+      &:hover{
+        color: white;
+        background-color: black;
+        border: 3px solid white;
+      }
+    }
+  }
+
+  .projectContainer__works{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin: 0 4rem 7rem 0;
+    .projectContainer__works--link{
+      @include linkButton();
+      color: white;
+      border: 3px solid white;
+      background-color: black;
+      &:hover{
+        color: black;
+        background-color: white;
+        border: 3px solid black;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+p {
+  color: white; }
+
+.contactContainer {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  height: 100vh; }
+  .contactContainer .contactContainer__CTA {
+    border-left: 8px solid white;
+    margin-left: 7%;
+    padding: 270px 30px;
+    width: 29%;
+    background-color: black; }
+    .contactContainer .contactContainer__CTA .contactContainer__CTA--title1 {
+      display: inline-block;
+      margin: 10px 0 -20px;
+      font-size: 130px;
+      font-family: "Bebas Neue", sans-serif;
+      -webkit-text-stroke: 2px white;
+      color: black; }
+    .contactContainer .contactContainer__CTA .contactContainer__CTA--title2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 31px;
+      margin-bottom: -30px; }
+    .contactContainer .contactContainer__CTA .contactContainer__CTA--title3 {
+      font-family: "Poppins", sans-serif;
+      font-size: 20px; }
+
+/*# sourceMappingURL=contact.css.map */
