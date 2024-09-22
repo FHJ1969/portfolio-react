@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightArrowLeft, faUser, faAddressCard, faHeart, faChevronDown, faChevronUp, faCode, faDatabase, faTools, faChartBar } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightArrowLeft, faUser, faAddressCard, faHeart, faChevronDown, faChevronUp, faCode, faDatabase, faTools, faChartBar, faFire} from "@fortawesome/free-solid-svg-icons";
 import Modal from './modal'; // Import Modal component
 import './about.scss'; // Assume you have about styles defined
 
@@ -49,7 +49,7 @@ function About() {
     // Competences content with collapsible divs and icons
     const renderCompetencesContent = () => (
         <div>
-            <h2>Compétences</h2>
+            <h2 style={{marginBottom:"20px"}}>Compétences</h2>
             <div className="collapsible">
                 <div className="collapsible-header" onClick={() => toggleCollapse('frontend')}>
                     <label>Frontend </label>
@@ -113,7 +113,7 @@ function About() {
     // CV content with link
     const renderCVContent = () => (
         <div>
-            <h2>Mon CV</h2>
+            <h2 style={{marginBottom:"20px"}}>Mon CV</h2>
             <p>Cliquez ici pour voir mon CV:</p>
             <a href="/path/to/cv" target="_blank" rel="noopener noreferrer">Voir CV</a>
         </div>
@@ -122,12 +122,12 @@ function About() {
     // Hobbies content with a list
     const renderHobbiesContent = () => (
         <div>
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
+            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faFire} style={{marginRight:"10px"}}/>Hobbies</h2>
+            <ul style={{marginLeft:"20px"}}>
+                <li>Design</li>
+                <li>Technologies</li>
+                <li>Philosophie</li>
+                <li>Sport</li>
             </ul>
         </div>
     );
@@ -135,7 +135,7 @@ function About() {
     // Moi content with a paragraph
     const renderMoiContent = () => (
         <div>
-            <h2>À propos de moi</h2>
+            <h2 style={{marginBottom:"20px"}}>À propos de moi</h2>
             <p>
                 Lorem ipsum
             </p>

@@ -19,6 +19,9 @@ p{
   width: 100%;
   background-color: transparent;
   height: 100vh;
+  @media (max-width: 1600px) {
+    height: 250vh;
+  }
   .projectContainer__CTA{
     border-left: 8px solid white;
     margin-left: 7%;
@@ -31,7 +34,10 @@ p{
       font-size: 170px;
       font-family: "Bebas Neue", sans-serif;
       -webkit-text-stroke: 2px white;
-      color: black
+      color: black;
+      @media (max-width: 1600px) {
+        font-size: 120px
+      }
     }
     .projectContainer__CTA--title2{
       font-family: "Poppins", sans-serif;
@@ -89,7 +95,7 @@ p{
 .projectCard {
   margin: 30px;
   width: 370px;
-  height: 260px;
+  height: 275px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: black;
@@ -142,21 +148,5 @@ p{
   &:hover{
     transform: scale(1.05) !important;
     opacity: 0.8 !important;
-  }
-}
-
-
-.projectContainer__more{
-  font-family: "Bebas Neue", sans-serif;
-  background-color: black;
-  border: 3px solid black;
-  padding: 7px 25px;
-  font-size: 25px;
-  cursor: pointer;
-  border-radius: 10px;
-  &:hover{
-    color: black;
-    background-color: transparent;
-    border: 3px solid black;
   }
 }

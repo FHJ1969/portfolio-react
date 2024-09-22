@@ -24,7 +24,7 @@ function Projects(){
                     <p className="projectContainer__CTA--title3">
                         Déroulés sur votre droite et accessibles entièrement en cliquant sur "En savoir plus"
                     </p>
-                    <a className="projectContainer__CTA--link" data-aos="fade-right">Entrer en contact <FontAwesomeIcon
+                    <a className="projectContainer__CTA--link" data-aos="fade-right">Voir tout mes projets <FontAwesomeIcon
                         style={{marginLeft: "8px"}} icon={faArrowRightArrowLeft}/></a>
                 </div>
 
@@ -48,8 +48,6 @@ function Projects(){
                             </div>
                         </div>
                     ))}
-                    <p className="projectContainer__more">Voir tout<FontAwesomeIcon
-                        style={{marginLeft: "8px"}} icon={faAnglesRight}/></p>
                 </div>
 
             </div>
