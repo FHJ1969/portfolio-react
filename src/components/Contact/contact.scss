@@ -1,4 +1,4 @@
-@mixin linkButton(){
+@mixin linkButton() {
   display: inline-block;
   cursor: pointer;
   font-size: 33px;
@@ -10,37 +10,118 @@
   flex-wrap: nowrap;
 }
 
-p{
+p {
   color: white;
 }
 
-.contactContainer{
+.contactContainer {
   display: flex;
   width: 100%;
   background-color: transparent;
   height: 100vh;
-  .contactContainer__CTA{
+
+  .contactContainer__CTA {
     border-left: 8px solid white;
     margin-left: 7%;
     padding: 270px 30px;
     width: 29%;
     background-color: black;
-    .contactContainer__CTA--title1{
+
+    .contactContainer__CTA--title1 {
       display: inline-block;
       margin: 10px 0 -20px;
       font-size: 130px;
       font-family: "Bebas Neue", sans-serif;
       -webkit-text-stroke: 2px white;
-      color: black
+      color: black;
     }
-    .contactContainer__CTA--title2{
+
+    .contactContainer__CTA--title2 {
       font-family: "Poppins", sans-serif;
       font-size: 31px;
       margin-bottom: -30px;
     }
-    .contactContainer__CTA--title3{
+
+    .contactContainer__CTA--title3 {
       font-family: "Poppins", sans-serif;
       font-size: 20px;
     }
   }
+
+  .contactContainer__formContainer {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 150px 300px;
+    width: 400px;
+    height: fit-content;
+
+    &--title {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 39px;
+    }
+
+    &--underTitle {
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &--label {
+      display: flex;
+      justify-content: left;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 10px;
+
+      &-star{
+        color: darkorange;
+      }
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      @include linkButton();
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      height: 59px;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}
+
+.titleBox {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 23px;
+}
+
+.textBox {
+  font-family: "Poppins", sans-serif;
 }

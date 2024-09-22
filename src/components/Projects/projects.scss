@@ -75,3 +75,88 @@ p{
     }
   }
 }
+
+.projectContainer__cardContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 45%;
+  padding: 20px;
+  margin: 110px 5% 0;
+}
+
+.projectCard {
+  margin: 30px;
+  width: 370px;
+  height: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  .projectCard__image {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+  }
+
+  .projectCard__info {
+    padding: 15px;
+  }
+
+  .projectCard__title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .projectCard__description {
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .projectCard__icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.1em;
+  }
+
+  .projectCard__link {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: indianred;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+  &:hover{
+    transform: scale(1.05) !important;
+    opacity: 0.8 !important;
+  }
+}
+
+
+.projectContainer__more{
+  font-family: "Bebas Neue", sans-serif;
+  background-color: black;
+  border: 3px solid black;
+  padding: 7px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover{
+    color: black;
+    background-color: transparent;
+    border: 3px solid black;
+  }
+}

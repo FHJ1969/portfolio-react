@@ -9,7 +9,7 @@ p {
   .landingContainer .landingContainer__CTA {
     border-left: 8px solid white;
     margin-left: 7%;
-    padding: 170px 30px;
+    padding: 250px 30px;
     width: 29%;
     background-color: black; }
     .landingContainer .landingContainer__CTA .landingContainer__CTA--title1 {
@@ -30,7 +30,7 @@ p {
       font-family: "Poppins", sans-serif;
       font-size: 11px; }
     .landingContainer .landingContainer__CTA .landingContainer__CTA--link {
-      margin: 100px 0 20px 3%;
+      margin: 183px 0 20px 3%;
       display: inline-block;
       cursor: pointer;
       font-size: 33px;
@@ -52,7 +52,7 @@ p {
     justify-content: flex-end;
     align-items: flex-end;
     flex-grow: 1;
-    margin: 0 4rem 7rem 0; }
+    margin: 0 6rem 6rem 0; }
     .landingContainer .landingContainer__works .landingContainer__works--link {
       display: inline-block;
       cursor: pointer;
@@ -64,11 +64,11 @@ p {
       transition: background-color 250ms ease-in-out;
       flex-wrap: nowrap;
       color: white;
-      border: 3px solid white;
+      border: 3px solid black;
       background-color: black; }
       .landingContainer .landingContainer__works .landingContainer__works--link:hover {
         color: black;
-        background-color: white;
+        background-color: transparent;
         border: 3px solid black; }
 
 /*# sourceMappingURL=landing.css.map */
