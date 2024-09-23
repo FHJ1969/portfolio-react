@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Background() {
+export default function Background() {
     return (
         <>
             <div
@@ -79,5 +79,3 @@ function Background() {
         </>
     );
 }
-
-export default Background;

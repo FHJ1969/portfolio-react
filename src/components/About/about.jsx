@@ -14,10 +14,10 @@ import {
     faHammer,
     faNewspaper
 } from "@fortawesome/free-solid-svg-icons";
-import Modal from './modal'; // Import Modal component
-import './about.scss'; // Assume you have about styles defined
+import Modal from './modal';
+import './about.scss';
 
-function About() {
+export default function About() {
     const [isOpen, setIsOpen] = useState(false);
     const [modalContent, setModalContent] = useState(null);
 
@@ -66,7 +66,6 @@ function About() {
         </div>
     );
 
-    // CV content with link
     const renderCVContent = () => (
         <div>
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faNewspaper} style={{marginRight:"10px"}}/>Mon CV</h2>
@@ -75,7 +74,6 @@ function About() {
         </div>
     );
 
-    // Hobbies content with a list
     const renderHobbiesContent = () => (
         <div>
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faFire} style={{marginRight:"10px"}}/>Hobbies</h2>
@@ -88,7 +86,6 @@ function About() {
         </div>
     );
 
-    // Moi content with a paragraph
     const renderMoiContent = () => (
         <div>
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
@@ -143,10 +140,7 @@ function About() {
                 </div>
             </div>
 
-            {/* Modal Component */}
             <Modal isOpen={isOpen} onClose={handleCloseModal} content={modalContent} />
         </>
     );
 }
-
-export default About;

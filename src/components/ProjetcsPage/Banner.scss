@@ -1,0 +1,12 @@
+.BannerContainer{
+  display: flex;
+  width: 100%;
+  background-color: black;
+
+  .Banner{
+    display: block;
+    height: 20vh;
+    width: 70%;
+    border-radius: 25px;
+  }
+}

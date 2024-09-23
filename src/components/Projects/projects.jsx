@@ -14,7 +14,7 @@ const iconMap = {
     faBugSlash
 };
 
-function Projects(){
+export default function Projects(){
     return(
         <>
             <div className="projectContainer">
@@ -24,7 +24,7 @@ function Projects(){
                     <p className="projectContainer__CTA--title3">
                         Déroulés sur votre droite et accessibles entièrement en cliquant sur "En savoir plus"
                     </p>
-                    <a className="projectContainer__CTA--link" data-aos="fade-right">Voir tout mes projets <FontAwesomeIcon
+                    <a className="projectContainer__CTA--link" data-aos="fade-right">En savoir plus <FontAwesomeIcon
                         style={{marginLeft: "8px"}} icon={faArrowRightArrowLeft}/></a>
                 </div>
 
@@ -54,5 +54,3 @@ function Projects(){
         </>
     )
 }
-
-export default Projects

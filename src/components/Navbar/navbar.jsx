@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Logo from '/src/assets/logoN.svg'
 
-function Navbar() {
+export default function Navbar() {
     return (
         <div className="Navbar">
             <div className="Navbar__top">
@@ -19,5 +19,3 @@ function Navbar() {
         </div>
     );
 }
-
-export default Navbar;

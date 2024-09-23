@@ -37,8 +37,7 @@ const App = () => (
         <Navbar />
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/logements/:id" element={<Projects />} />
-            <Route path="/error" element={<Error />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="*" element={<Error />} />
         </Routes>
     </Router>
