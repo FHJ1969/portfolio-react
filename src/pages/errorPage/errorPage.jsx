@@ -1,8 +1,8 @@
-function ErrorPage(){
+function Error(){
     return(
     <>
     </>
     )
 }
 
-export default ErrorPage
+export default Error

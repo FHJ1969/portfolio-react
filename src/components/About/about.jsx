@@ -1,18 +1,25 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightArrowLeft, faUser, faAddressCard, faHeart, faChevronDown, faChevronUp, faCode, faDatabase, faTools, faChartBar, faFire} from "@fortawesome/free-solid-svg-icons";
+import {
+    faArrowRightArrowLeft,
+    faUser,
+    faAddressCard,
+    faHeart,
+    faCode,
+    faDatabase,
+    faTools,
+    faChartBar,
+    faFire,
+    faCircleUser,
+    faHammer,
+    faNewspaper
+} from "@fortawesome/free-solid-svg-icons";
 import Modal from './modal'; // Import Modal component
 import './about.scss'; // Assume you have about styles defined
 
 function About() {
     const [isOpen, setIsOpen] = useState(false);
     const [modalContent, setModalContent] = useState(null);
-    const [collapsed, setCollapsed] = useState({
-        frontend: true,
-        backend: true,
-        outils: true,
-        methodes: true,
-    });
 
     // Function to handle card click
     const handleCardClick = (cardType) => {
@@ -32,80 +39,29 @@ function About() {
             default:
                 setModalContent(null);
         }
-        setIsOpen(true); // Open the modal
+        setIsOpen(true); // Open the modal when modalContent is set
     };
 
     const handleCloseModal = () => {
         setIsOpen(false); // Close the modal
     };
 
-    const toggleCollapse = (category) => {
-        setCollapsed(prevState => ({
-            ...prevState,
-            [category]: !prevState[category]
-        }));
-    };
-
-    // Competences content with collapsible divs and icons
+    // Competences content with icons and titles
     const renderCompetencesContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}>Compétences</h2>
-            <div className="collapsible">
-                <div className="collapsible-header" onClick={() => toggleCollapse('frontend')}>
-                    <label>Frontend </label>
-                    <FontAwesomeIcon icon={collapsed.frontend ? faChevronDown : faChevronUp} />
+            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faHammer} style={{marginRight:"10px"}}/>Compétences</h2>
+            <div>
+                <div><FontAwesomeIcon icon={faCode} style={{marginRight: "10px"}}/>Frontend :<br/> HTML, CSS,
+                    JavaScript, React<br/><br/></div>
+                <div><FontAwesomeIcon icon={faDatabase} style={{marginRight: "10px"}}/>Backend :<br/> Node.js, Express,
+                    MongoDB<br/><br/>
                 </div>
-                {!collapsed.frontend && (
-                    <div className="collapsible-content">
-                        <div>HTML <FontAwesomeIcon icon={faCode} /></div>
-                        <div>CSS <FontAwesomeIcon icon={faCode} /></div>
-                        <div>JavaScript <FontAwesomeIcon icon={faCode} /></div>
-                        <div>React <FontAwesomeIcon icon={faCode} /></div>
-                    </div>
-                )}
-            </div>
-
-            <div className="collapsible">
-                <div className="collapsible-header" onClick={() => toggleCollapse('backend')}>
-                    <label>Backend </label>
-                    <FontAwesomeIcon icon={collapsed.backend ? faChevronDown : faChevronUp} />
+                <div><FontAwesomeIcon icon={faTools} style={{marginRight: "10px"}}/>Outils :<br/> Git, VSCode,
+                    Webstorm<br/><br/>
                 </div>
-                {!collapsed.backend && (
-                    <div className="collapsible-content">
-                        <div>Node.js <FontAwesomeIcon icon={faDatabase} /></div>
-                        <div>Express <FontAwesomeIcon icon={faDatabase} /></div>
-                        <div>MongoDB <FontAwesomeIcon icon={faDatabase} /></div>
-                    </div>
-                )}
-            </div>
-
-            <div className="collapsible">
-                <div className="collapsible-header" onClick={() => toggleCollapse('outils')}>
-                    <label>Outils </label>
-                    <FontAwesomeIcon icon={collapsed.outils ? faChevronDown : faChevronUp} />
+                <div><FontAwesomeIcon icon={faChartBar} style={{marginRight: "10px"}}/>Méthodes :<br/> Agile, Scrum,
+                    Cascade, POO<br/><br/>
                 </div>
-                {!collapsed.outils && (
-                    <div className="collapsible-content">
-                        <div>Git <FontAwesomeIcon icon={faTools} /></div>
-                        <div>VSCode <FontAwesomeIcon icon={faTools} /></div>
-                        <div>Webstorm <FontAwesomeIcon icon={faTools} /></div>
-                    </div>
-                )}
-            </div>
-
-            <div className="collapsible">
-                <div className="collapsible-header" onClick={() => toggleCollapse('methodes')}>
-                    <label>Méthodes </label>
-                    <FontAwesomeIcon icon={collapsed.methodes ? faChevronDown : faChevronUp} />
-                </div>
-                {!collapsed.methodes && (
-                    <div className="collapsible-content">
-                        <div>Agile <FontAwesomeIcon icon={faChartBar} /></div>
-                        <div>Scrum <FontAwesomeIcon icon={faChartBar} /></div>
-                        <div>Cascade <FontAwesomeIcon icon={faChartBar} /></div>
-                        <div>POO <FontAwesomeIcon icon={faChartBar} /></div>
-                    </div>
-                )}
             </div>
         </div>
     );
@@ -113,7 +69,7 @@ function About() {
     // CV content with link
     const renderCVContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}>Mon CV</h2>
+            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faNewspaper} style={{marginRight:"10px"}}/>Mon CV</h2>
             <p>Cliquez ici pour voir mon CV:</p>
             <a href="/path/to/cv" target="_blank" rel="noopener noreferrer">Voir CV</a>
         </div>
@@ -135,7 +91,7 @@ function About() {
     // Moi content with a paragraph
     const renderMoiContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}>À propos de moi</h2>
+            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
             <p>
                 Lorem ipsum
             </p>

@@ -166,4 +166,14 @@ p{
   padding: 10px;
   color: black;
   background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+  transition: all 200ms ease-in-out;
 }
+
+.collapsible-content.open {
+  max-height: 1000px;
+  display: block;
+}
+

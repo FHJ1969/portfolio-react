@@ -1,8 +1,8 @@
-function ProjectPage(){
+function Projects(){
     return(
     <>
     </>
     )
 }
 
-export default ProjectPage
+export default Projects
