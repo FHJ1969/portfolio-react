@@ -3,6 +3,7 @@ import { faReact, faSass, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faSquarePollVertical, faBugSlash, faGlobe, faArrowRightArrowLeft, faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 import './projects.scss'
 import works from '/src/data/works.json';
+import {NavLink} from "react-router-dom";
 
 const iconMap = {
     faGlobe,
@@ -27,13 +28,13 @@ export default function Projects(){
                     <p className="projectContainer__CTA--title3">
                         Déroulés sur votre droite et accessibles entièrement en cliquant sur "En savoir plus"
                     </p>
-                    <a className="projectContainer__CTA--link" data-aos="fade-right">En savoir plus <FontAwesomeIcon
-                        style={{marginLeft: "8px"}} icon={faArrowRightArrowLeft}/></a>
+                    <NavLink to="/projects" className="projectContainer__CTA--link" data-aos="fade-right">En savoir plus <FontAwesomeIcon
+                        style={{marginLeft: "8px"}} icon={faArrowRightArrowLeft}/></NavLink>
                 </div>
 
                 <div className="projectContainer__cardContainer">
                     {firstFourWorks.map((work, index) => (
-                        <div key={index} className="projectCard" data-aos="flip-up">
+                        <NavLink to="/projects" key={index} className="projectCard" data-aos="flip-up">
                             <img src={work.cover} alt={work.title} className="projectCard__image"/>
                             <div className="projectCard__info">
                                 <h3 className="projectCard__title">
@@ -49,7 +50,7 @@ export default function Projects(){
                                     <a href="#" className="projectCard__link">En savoir plus &gt;</a>
                                 </div>
                             </div>
-                        </div>
+                        </NavLink>
                     ))}
                 </div>
 

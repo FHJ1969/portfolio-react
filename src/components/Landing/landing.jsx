@@ -9,7 +9,7 @@ import {NavLink} from "react-router-dom";
 export default function Landing(){
     return(
         <>
-            <div className="landingContainer">
+            <div id="landing" className="landingContainer">
                 <div className="landingContainer__CTA">
                     <p className="landingContainer__CTA--title2">Salut, moi c'est</p>
                     <p className="landingContainer__CTA--title1" data-aos="zoom-in">NASSIM</p>
@@ -18,7 +18,7 @@ export default function Landing(){
                         passioné par la création d’expériences robustes et uniques
                     </p>
                     <p className="landingContainer__CTA--title4">et un tas d’autres choses</p>
-                    <a className="landingContainer__CTA--link" data-aos="fade-right">Entrer en contact <FontAwesomeIcon style={{marginLeft: "8px"}} icon={faArrowRightArrowLeft}/></a>
+                    <a href="#contact" className="landingContainer__CTA--link" data-aos="fade-right">Entrer en contact <FontAwesomeIcon style={{marginLeft: "8px"}} icon={faArrowRightArrowLeft}/></a>
                 </div>
 
                 <div className="landingContainer__works">

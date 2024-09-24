@@ -1,11 +1,9 @@
 import './contact.scss'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTree, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
     return (
         <>
-            <div className="contactContainer">
+            <div id="contact" className="contactContainer">
                 <div className="contactContainer__CTA">
                     <p className="contactContainer__CTA--title2">Et enfin pour me</p>
                     <p className="contactContainer__CTA--title1" data-aos="zoom-in">CONTACTER</p>

@@ -1,0 +1,48 @@
+@mixin hover {
+  transition: 250ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+}
+
+.ProjectList {
+  margin-left: 7%;
+  background-color: black;
+  padding: 20px 15px;
+  &__project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    height: 50px;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+    &:hover{
+      height: 75px;
+    }
+
+    &--title {
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      flex: 1;
+      color: white;
+    }
+
+    &--icons {
+      display: flex;
+      gap: 5px;
+      color: white;
+      margin-right: 10px;
+      font-size: 25px;
+    }
+
+    &--link {
+      margin: 0 10px 0 3px;
+      color: white;
+      @include hover;
+      font-size: 25px;
+    }
+  }
+}

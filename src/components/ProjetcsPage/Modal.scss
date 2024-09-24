@@ -1,0 +1,77 @@
+.Modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal__content {
+  background: white;
+  color: black;
+  padding: 50px;
+  border-radius: 8px;
+  width: 30%;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.Modal__banner {
+  border-radius: 15px;
+  width: 100%;
+  height: 20vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.Modal__content h2 {
+  font-size: 35px;
+  margin-top: 0;
+  padding: 25px 0;
+  border-top: black solid 2px;
+}
+
+.Modal__content p {
+  color: black;
+  margin-top: 15px;
+}
+
+.Modal__content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Modal__content button:hover {
+  background: #0056b3;
+}
+
+.Modal__icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.Modal__close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.Modal__close-icon:hover {
+  color: #0056b3;
+}

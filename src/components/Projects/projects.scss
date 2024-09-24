@@ -93,6 +93,7 @@ p{
 }
 
 .projectCard {
+  text-decoration: none;
   margin: 30px;
   width: 370px;
   height: 275px;
@@ -133,9 +134,9 @@ p{
   }
 
   .projectCard__link {
+    text-decoration: none;
     display: flex;
     justify-content: right;
-    text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     color: indianred;
