@@ -15,6 +15,9 @@ const iconMap = {
 };
 
 export default function Projects(){
+    // Slice the works array to get only the first 4 items
+    const firstFourWorks = works.slice(0, 4);
+
     return(
         <>
             <div className="projectContainer">
@@ -29,7 +32,7 @@ export default function Projects(){
                 </div>
 
                 <div className="projectContainer__cardContainer">
-                    {works.map((work, index) => (
+                    {firstFourWorks.map((work, index) => (
                         <div key={index} className="projectCard" data-aos="flip-up">
                             <img src={work.cover} alt={work.title} className="projectCard__image"/>
                             <div className="projectCard__info">
