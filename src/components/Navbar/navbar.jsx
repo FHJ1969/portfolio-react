@@ -15,7 +15,7 @@ export default function Navbar() {
 
             <div className="Navbar__bottom">
                 <a href="https://www.linkedin.com/in/nassim-achfigat-409151307" target="_blank" className="Navbar__link Navbar__link--icon"><FontAwesomeIcon icon={faLinkedin}/></a>
-                <NavLink to="/#landing" href="#landing" className="Navbar__link Navbar__link--icon"><img alt="Logo" style={{width:"43px",marginLeft:"-6px"}} src={Logo}/></NavLink>
+                <NavLink to="/#landing" href="#landing" className="Navbar__link Navbar__link--icon"><img className="logo_nassim" alt="Logo" src={Logo}/></NavLink>
             </div>
         </div>
     );

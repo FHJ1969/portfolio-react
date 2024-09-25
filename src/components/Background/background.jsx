@@ -1,20 +1,12 @@
 import React from 'react';
+import './background.scss'
 
 export default function Background() {
     return (
         <>
             <div
                 id="bg-wrap"
-                style={{
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    height: "100vh",
-                    zIndex: "-1",
-                    overflow: "hidden"
-                }}
+                className="bgwrap"
             >
                 <svg
                     viewBox="0 0 100 100"
