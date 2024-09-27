@@ -7,9 +7,13 @@
   background-color: black;
   color: white;
   padding: 20px 0;
+  border-right: 8px solid white;
   position: fixed;
   top: 0;
   left: 0;
+  @media (max-width: 600px) {
+    border-right: none;
+  }
 
   .Navbar__top,
   .Navbar__bottom {

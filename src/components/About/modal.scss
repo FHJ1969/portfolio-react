@@ -16,9 +16,11 @@
   padding: 20px;
   border-radius: 10px;
   max-width: 80%;
-  width: 500px;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  @media (max-width: 600px) {
+    max-width: 40%;
+  }
 }
 
 .modal-close {

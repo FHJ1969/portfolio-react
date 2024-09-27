@@ -25,14 +25,16 @@ p{
     height: 95vh;
   }
   .landingContainer__CTA{
-    border-left: 8px solid white;
     margin-left: 7%;
     padding: 250px 30px;
     width: 29%;
     background-color: black;
+    @media (max-width: 1600px) {
+      padding: 30px;
+    }
     @media (max-width: 600px){
       padding: 55px 30px;
-      width: 93%;
+      width: 79.5%;
     }
     .landingContainer__CTA--title1{
       display: inline-block;
@@ -87,11 +89,10 @@ p{
     flex-grow: 1;
     margin: 0;
     @media (max-width: 600px) {
-      margin-top: -30px;
       justify-content: center;
       align-items: center;
       background-color: black;
-      border-left: 8px solid white;
+      flex-grow: -1;
     }
     .landingContainer__works--link{
       @include linkButton();
