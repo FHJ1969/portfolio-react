@@ -9,6 +9,9 @@
   padding: 10px 20px;
   transition: 250ms ease-in-out;
   flex-wrap: nowrap;
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
 }
 
 p{
@@ -45,6 +48,10 @@ p{
       color: black;
       @media (max-width: 1600px) {
         font-size: 120px
+      }
+      @media (max-width: 600px) {
+        font-size: 90px;
+        margin: 20px 0 -15px;
       }
     }
     .projectContainer__CTA--title2{
@@ -100,6 +107,7 @@ p{
   margin: 110px 5% 0;
   @media (max-width: 600px) {
     width: 80%;
+    margin: -260px 5% 0;
   }
 }
 

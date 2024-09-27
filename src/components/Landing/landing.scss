@@ -9,6 +9,9 @@
   padding: 10px 20px;
   transition: background-color 250ms ease-in-out;
   flex-wrap: nowrap;
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
 }
 
 p{
@@ -46,6 +49,9 @@ p{
       @media (max-width:1600px){
         font-size: 150px;
         margin: 10px 0 -30px;
+      }
+      @media (max-width: 600px) {
+        font-size: 110px;
       }
     }
     .landingContainer__CTA--title2{
