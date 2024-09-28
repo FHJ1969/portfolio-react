@@ -5,10 +5,10 @@ function Contact() {
         <>
             <div id="contact" className="contactContainer">
                 <div className="contactContainer__CTA">
-                    <p className="contactContainer__CTA--title2">Et enfin pour me</p>
-                    <p className="contactContainer__CTA--title1" data-aos="zoom-in">CONTACTER</p>
+                    <p className="contactContainer__CTA--title2">Et enfin, ma section</p>
+                    <p className="contactContainer__CTA--title1" data-aos="zoom-in">CONTACT</p>
                     <p className="contactContainer__CTA--title3">
-                        Vous pouvez le faire en complétant et en m'envoyant le formulaire fourni sur votre droite :)
+                        Vous pouvez ici me contacter en complétant et en m'envoyant le formulaire fourni sur votre droite :)
                     </p>
                 </div>
 
