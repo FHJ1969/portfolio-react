@@ -4,7 +4,7 @@ import {
     faArrowRightArrowLeft,
     faUser,
     faAddressCard,
-    faHeart,
+    faBook,
     faCode,
     faDatabase,
     faTools,
@@ -12,7 +12,8 @@ import {
     faFire,
     faCircleUser,
     faHammer,
-    faNewspaper
+    faNewspaper,
+    faSwatchbook
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from './modal';
 import './about.scss';
@@ -52,15 +53,15 @@ export default function About() {
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faHammer} style={{marginRight:"10px"}}/>Compétences</h2>
             <div>
                 <div><FontAwesomeIcon icon={faCode} style={{marginRight: "10px"}}/>Frontend :<br/> HTML, CSS,
-                    JavaScript, React<br/><br/></div>
+                    JavaScript, React, Sass<br/><br/></div>
                 <div><FontAwesomeIcon icon={faDatabase} style={{marginRight: "10px"}}/>Backend :<br/> Node.js, Express,
                     MongoDB<br/><br/>
                 </div>
                 <div><FontAwesomeIcon icon={faTools} style={{marginRight: "10px"}}/>Outils :<br/> Git, VSCode,
-                    Webstorm<br/><br/>
+                    Webstorm, Figma, Canva<br/><br/>
                 </div>
                 <div><FontAwesomeIcon icon={faChartBar} style={{marginRight: "10px"}}/>Méthodes :<br/> Agile, Scrum,
-                    Cascade, POO<br/><br/>
+                    Cascade, POO, SEO, Analytiques digital<br/><br/>
                 </div>
             </div>
         </div>
@@ -76,21 +77,30 @@ export default function About() {
 
     const renderHobbiesContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faFire} style={{marginRight:"10px"}}/>Hobbies</h2>
-            <ul style={{marginLeft:"20px"}}>
-                <li>Design</li>
-                <li>Technologies</li>
-                <li>Philosophie</li>
-                <li>Sport</li>
+            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faBook} style={{marginRight:"10px"}}/>Diplômes et expériences</h2>
+            <ul style={{marginLeft: "20px"}}>
+                <li>Diplômes</li>
+                <p style={{fontSize: "25px"}}>Baccalauréat général (2022)</p>
+                <p style={{fontSize: "15px", opacity: "0.6"}}>Lycée Jean Moulin (Pézenas)</p>
+                <p style={{fontSize: "25px"}}>Développeur Web (2024)</p>
+                <p style={{fontSize: "15px", opacity: "0.6"}}>Openclassrooms - Diplôme Développeur d'applications web</p>
+                <li>Expériences</li>
+                <p style={{fontSize: "25px"}}>Stage d'immersion en entreprise (2024)</p>
+                <p style={{fontSize: "15px", opacity: "0.6"}}>NEO (Gigean) - Marketing digital et créations de visuels</p>
             </ul>
         </div>
     );
 
     const renderMoiContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
+            <h2 style={{marginBottom: "20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
             <p>
-                Lorem ipsum
+                Programmeur fullstack junior passioné de 19ans,
+                avec une solide compréhension des intéractions front-end et back-end.
+                Enthousiaste à l'idée de développer des applications web robustes et esthétiques ainsi que de collaborer en équipe
+                pour mener à bien des projets ambitieux et riches.
+                Je suis constamment à la recherche de nouvelles compétences et de défis pour améliorer mes
+                connaissances et contribuer à des projets engageants.
             </p>
         </div>
     );
@@ -111,22 +121,22 @@ export default function About() {
                     <div className="aboutContainer__boxes--big aboutCard" data-aos="zoom-out-left" onClick={() => handleCardClick('competences')}>
                         <div className="aboutContainer__boxes--card-footer">
                             <p className="aboutContainer__boxes--card-text">Compétences</p>
-                            <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faArrowRightArrowLeft} />
+                            <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faSwatchbook} />
                         </div>
                     </div>
 
                     <div className="aboutContainer__boxes--medium aboutCard" data-aos="fade-down" onClick={() => handleCardClick('moi')}>
                         <div className="aboutContainer__boxes--card-footer">
                             <p className="aboutContainer__boxes--card-text">Moi</p>
-                            <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faUser} />
+                            <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faUser}/>
                         </div>
                     </div>
 
                     <div className="aboutContainer__boxes--small">
                         <div className="aboutContainer__boxes--small1 aboutCard" data-aos="fade-right" onClick={() => handleCardClick('hobbies')}>
                             <div className="aboutContainer__boxes--card-footer">
-                                <p className="aboutContainer__boxes--card-text">Hobbies</p>
-                                <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faHeart} />
+                                <p className="aboutContainer__boxes--card-text">Exp</p>
+                                <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faBook} />
                             </div>
                         </div>
 
