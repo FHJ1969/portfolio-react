@@ -179,6 +179,15 @@ p{
   }
 }
 
+.ExpTitle{
+  font-size: 25px;
+}
+
+.ExpDesc {
+  font-size: 15px;
+  opacity: 0.6;
+}
+
 .collapsible {
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -210,4 +219,3 @@ p{
   max-height: 1000px;
   display: block;
 }
-

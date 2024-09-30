@@ -9,7 +9,6 @@ import {
     faDatabase,
     faTools,
     faChartBar,
-    faFire,
     faCircleUser,
     faHammer,
     faNewspaper,
@@ -71,7 +70,7 @@ export default function About() {
         <div>
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faNewspaper} style={{marginRight:"10px"}}/>Mon CV</h2>
             <p>Cliquez ici pour voir mon CV:</p>
-            <a href="/path/to/cv" target="_blank" rel="noopener noreferrer">Voir CV</a>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:836a67e1-0388-4615-9d15-5234fa6705e8?viewer!megaVerb=group-discover" target="_blank" rel="noopener noreferrer">Voir CV</a>
         </div>
     );
 
@@ -80,13 +79,13 @@ export default function About() {
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faBook} style={{marginRight:"10px"}}/>Diplômes et expériences</h2>
             <ul style={{marginLeft: "20px"}}>
                 <li>Diplômes</li>
-                <p style={{fontSize: "25px"}}>Baccalauréat général (2022)</p>
-                <p style={{fontSize: "15px", opacity: "0.6"}}>Lycée Jean Moulin (Pézenas)</p>
-                <p style={{fontSize: "25px"}}>Développeur Web (2024)</p>
-                <p style={{fontSize: "15px", opacity: "0.6"}}>Openclassrooms - Diplôme Développeur d'applications web</p>
-                <li>Expériences</li>
-                <p style={{fontSize: "25px"}}>Stage d'immersion en entreprise (2024)</p>
-                <p style={{fontSize: "15px", opacity: "0.6"}}>NEO (Gigean) - Marketing digital et créations de visuels</p>
+                <p className="ExpTitle">Baccalauréat général (2022)</p>
+                <p className="ExpDesc">Lycée Jean Moulin (Pézenas)</p>
+                <p className="ExpTitle">Développeur Web (2024)</p>
+                <p className="ExpDesc">Openclassrooms - Diplôme Développeur d'applications web</p>
+                <li style={{marginTop:"25px"}} >Expériences</li>
+                <p className="ExpTitle">Stage d'immersion en entreprise (2024)</p>
+                <p className="ExpDesc">NEO (Gigean) - Marketing digital et créations de visuels</p>
             </ul>
         </div>
     );
@@ -95,10 +94,10 @@ export default function About() {
         <div>
             <h2 style={{marginBottom: "20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
             <p>
-                Programmeur fullstack junior passioné de 19ans,
-                avec une solide compréhension des intéractions front-end et back-end.
+                Programmeur fullstack junior de 19ans,
+                avec une solide compréhension des intéractions front-end et back-end.<br/><br/>
                 Enthousiaste à l'idée de développer des applications web robustes et esthétiques ainsi que de collaborer en équipe
-                pour mener à bien des projets ambitieux et riches.
+                afin de mener à bien des projets ambitieux et riches en expériences.<br/><br/>
                 Je suis constamment à la recherche de nouvelles compétences et de défis pour améliorer mes
                 connaissances et contribuer à des projets engageants.
             </p>

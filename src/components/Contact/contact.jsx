@@ -16,17 +16,19 @@ function Contact() {
                     <p className="contactContainer__formContainer--title">Formulaire de contact</p>
                     <p className="contactContainer__formContainer--underTitle">les champs indiqués d'une astérisque
                         sont nécéssaires à remplir.</p>
+                    <p className="msgError">Le formulaire est actuellement indisponible, désolé de la gêne
+                        occasionée, je reste joignable par mail à l'adresse: achnassim34@gmail.Com</p>
 
                     <label htmlFor="email" className="contactContainer__formContainer--label">E-mail
                         <p className="contactContainer__formContainer--label-star">*</p></label>
-                    <input name="email" type="email"/>
+                    <input placeholder="Veuillez renseigner ici votre adresse e-mail..." name="email" type="email"/>
 
                     <label htmlFor="tel" className="contactContainer__formContainer--label">N° de téléphone</label>
-                    <input type="tel" name="tel"/>
+                    <input placeholder="Veuillez renseigner ici votre n° de tel..." type="tel" name="tel"/>
 
                     <label htmlFor="textarea" className="contactContainer__formContainer--label">Message
                         <p className="contactContainer__formContainer--label-star">*</p></label>
-                    <textarea name="textarea"></textarea>
+                    <textarea placeholder="Veuillez renseigner ici votre message..." name="textarea"></textarea>
 
                     <button className="contactContainer__CTA--link">Envoyer</button>
                 </div>
