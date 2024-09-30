@@ -8,7 +8,8 @@ export default function Navbar() {
     return (
         <div className="Navbar">
             <div className="Navbar__top">
-                <NavLink to="/#about" href="#" className="Navbar__link">A PROPOS</NavLink>
+                <NavLink to="/#landing" className="Navbar__link">ACCEUIL</NavLink>
+                <NavLink to="/#about" className="Navbar__link">A PROPOS</NavLink>
                 <NavLink to="/projects" className="Navbar__link">PROJETS</NavLink>
                 <NavLink to="/#contact" className="Navbar__link">CONTACT</NavLink>
             </div>
