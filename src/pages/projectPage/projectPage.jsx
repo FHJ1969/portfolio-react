@@ -1,5 +1,5 @@
-import Banner from "../../components/ProjetcsPage/Banner.jsx";
-import ProjectList from "../../components/ProjetcsPage/ProjectList.jsx";
+import Banner from "../../components/ProjectsPage/Banner.jsx";
+import ProjectList from "../../components/ProjectsPage/ProjectList.jsx";
 
 export default function Projects(){
     return(

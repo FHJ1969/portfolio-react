@@ -57,7 +57,7 @@ export default function About() {
                     MongoDB<br/><br/>
                 </div>
                 <div><FontAwesomeIcon icon={faTools} style={{marginRight: "10px"}}/>Outils :<br/> Git, VSCode,
-                    Webstorm, Figma, Canva<br/><br/>
+                    Webstorm, Figma, Canva, Slack<br/><br/>
                 </div>
                 <div><FontAwesomeIcon icon={faChartBar} style={{marginRight: "10px"}}/>Méthodes :<br/> Agile, Scrum,
                     Cascade, POO, SEO, Analytiques digital<br/><br/>
