@@ -70,7 +70,7 @@ export default function About() {
         <div>
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faNewspaper} style={{marginRight:"10px"}}/>Mon CV</h2>
             <p>Cliquez ici pour voir mon CV:</p>
-            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:836a67e1-0388-4615-9d15-5234fa6705e8?viewer!megaVerb=group-discover" target="_blank" rel="noopener noreferrer">Voir CV</a>
+            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:f6817c6f-26b3-410a-8842-5bc824db9090?viewer!megaVerb=group-discover" target="_blank" rel="noopener noreferrer">Voir CV</a>
         </div>
     );
 
