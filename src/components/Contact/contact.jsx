@@ -17,7 +17,7 @@ function Contact() {
                     <p className="contactContainer__formContainer--underTitle">les champs indiqués d'une astérisque
                         sont nécéssaires à remplir.</p>
                     <p className="msgError">Le formulaire est actuellement indisponible,
-                        cependant je reste joignable par mail à l'adresse: achnassim34@gmail.Com</p>
+                        cependant je reste joignable par mail à l'adresse: achnassim34@gmail.com</p>
 
                     <label htmlFor="email" className="contactContainer__formContainer--label">E-mail
                         <p className="contactContainer__formContainer--label-star">*</p></label>
