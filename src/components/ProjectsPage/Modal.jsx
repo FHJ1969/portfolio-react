@@ -39,15 +39,19 @@ const Modal = ({ project, onClose }) => {
             <div className="Modal__content" data-aos="zoom-in" onClick={(e) => e.stopPropagation()}>
                 <img src={project.cover} className="Modal__banner"></img>
                 <h2><FontAwesomeIcon icon={faGlobe}/> {project.title}</h2>
+                <p className="Modal__content--sectionTitle">Mission :</p>
                 <p>{project.description}</p>
-                <p>Stack du projet :</p>
+                <p className="Modal__content--sectionTitle">Description :</p>
+                <p>{project.text}</p>
+                <p className="Modal__content--sectionTitle">Stack du projet :</p>
                 <div className="Modal__icons">
                     {project.icons.map((iconName, idx) => (
-                        <FontAwesomeIcon key={idx} icon={iconMap[iconName]} />
+                        <FontAwesomeIcon key={idx} icon={iconMap[iconName]}/>
                     ))}
                 </div>
-                <a href={project.github} className="Modal__github" style={{display:"block",marginTop:"15px"}}>Lien du repo GitHub</a>
-                <FontAwesomeIcon icon={faXmark} onClick={onClose} className="Modal__close-icon" />
+                <a href={project.github} className="Modal__github" style={{display: "block", marginTop: "15px"}}>Lien du
+                    repo GitHub</a>
+                <FontAwesomeIcon icon={faXmark} onClick={onClose} className="Modal__close-icon"/>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@
   {
     "title": "Kasa",
     "description": "Intégration d'un site d'hébergement d'offre immobilière",
+    "text": "Réalisation de l'intégration frontend avec React d'un site d'offre immobilière, avec Landing, page pour les offres et enfin une section à propos.",
     "cover": "/src/assets/kasaScreen.jpg",
     "type": "faGlobe",
     "github": "https://github.com/FHJ1969/kasa-fr",
@@ -10,6 +11,7 @@
   {
     "title": "Mon Vieux Grimoire",
     "description": "Création du backend d'un site d'hébergement d'offres de ventes de livres",
+    "text": "Réalisation du backend d'un site d'hébergement d'offres de ventes de livres, le site est composé d'une page d'acceuil, une page produit, et est amené à gérer un certain nombre d'opérations CRUD selon le statut de connection de l'utilisateur",
     "cover": "/src/assets/monVieuxGrimoire.jpg",
     "type": "faGlobe",
     "github": "https://github.com/FHJ1969/P6-dev-backend-livres",
@@ -18,6 +20,7 @@
   {
     "title": "Ninna Carducci",
     "description": "Déboggage et optimisation du site portfolio d'une photographe",
+    "text": "Réalisation d'un audit complet des performances et réalisations des améliorations nécessaires en terme de SEO, accesibilité, résolution de bug et optimisation des ressources utilisés.",
     "cover": "/src/assets/ninaCarducci.jpg",
     "type": "faGlobe",
     "github": "https://github.com/FHJ1969/Nina-Carducci-Photographe",
@@ -26,6 +29,7 @@
   {
     "title": "Toile d'art",
     "description": "Création d'un site web vitrine pour une entreprise de peinture en batîment",
+    "text": "Réalisation d'un site web vitrine à l'usage d'une entreprise de peinture en batîment réalisé en React, le site est composé de plusieurs sections sur la page d'accueil ainsi que des pages produits spécifiques aux différentes offres fournis.",
     "cover": "/src/assets/toileDart.svg",
     "type": "faGlobe",
     "github": "https://github.com/FHJ1969/toile-dart",
@@ -34,6 +38,7 @@
   {
     "title": "MenuMaker by Qwenta",
     "description": "Mise en place de la veille technologique et des spécifications techniques d'un outil de création de menu",
+    "text": "Réalisation d'une veille technologique et rédaction des spécifications techniques d'un outil de confection de menus à l'usage d'une entreprise d'impression de menus.",
     "cover": "/src/assets/qwenta.png",
     "github": "https://github.com/FHJ1969",
     "type": "faGlobe",
@@ -42,6 +47,7 @@
   {
     "title": "Booki",
     "description": "Intégration de la landing page d'un site d'hébergement d'offres immobilières",
+    "text": "Intégration en HTML & CSS à partir d'une maquette de la page d'acceuil d'un site d'hébergement d'offres immobilière. ",
     "cover": "/src/assets/booki.png",
     "type": "faGlobe",
     "github": "https://github.com/FHJ1969/Booki",
@@ -50,6 +56,7 @@
   {
     "title": "Sophie bluel",
     "description": "Intégration du site d'une architecte d'intérieur avec privilèges admin et opération de modales",
+    "text" : "Intégration en vanilla Javascript, HTML & CSS du site web portfolio d'une architecte d'intérieur, le site offre un outil de création de fiche projet à partir d'une modale accesible à l'administrateur du site (Sophie Bluel).",
     "cover": "/src/assets/sophiebluel.png",
     "github": "https://github.com/FHJ1969/ArchiWebos",
     "type": "faGlobe",

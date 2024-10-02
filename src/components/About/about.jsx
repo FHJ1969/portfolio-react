@@ -12,7 +12,7 @@ import {
     faCircleUser,
     faHammer,
     faNewspaper,
-    faSwatchbook
+    faSwatchbook, faChartSimple
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from './modal';
 import './about.scss';
@@ -52,15 +52,19 @@ export default function About() {
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faHammer} style={{marginRight:"10px"}}/>Compétences</h2>
             <div>
                 <div><FontAwesomeIcon icon={faCode} style={{marginRight: "10px"}}/>Frontend :<br/> HTML, CSS,
-                    JavaScript, React, Sass<br/><br/></div>
+                    JavaScript, React, Sass, Scss<br/><br/></div>
                 <div><FontAwesomeIcon icon={faDatabase} style={{marginRight: "10px"}}/>Backend :<br/> Node.js, Express,
-                    MongoDB<br/><br/>
+                    MongoDB, RESTful APIs, noSQL<br/><br/>
                 </div>
-                <div><FontAwesomeIcon icon={faTools} style={{marginRight: "10px"}}/>Outils :<br/> Git, VSCode,
-                    Webstorm, Figma, Canva, Slack<br/><br/>
+                <div><FontAwesomeIcon icon={faTools} style={{marginRight: "10px"}}/>Outils :<br/> Git, Github, Postman, VSCode,
+                    Webstorm, Figma, Canva, Slack, Notion, Trello, Microsoft 365, Linux (Debian)<br/><br/>
                 </div>
                 <div><FontAwesomeIcon icon={faChartBar} style={{marginRight: "10px"}}/>Méthodes :<br/> Agile, Scrum,
-                    Cascade, POO, SEO, Analytiques digital<br/><br/>
+                    Cascade, POO<br/><br/>
+                </div>
+                <div><FontAwesomeIcon icon={faChartSimple} style={{marginRight: "10px"}} />Marketing digital :<br /> SEO, Google Search Console,
+                     Google Analytics, Google Rich Snippets, Google Ads, Facebook Ads, Lighouse, Wave
+
                 </div>
             </div>
         </div>

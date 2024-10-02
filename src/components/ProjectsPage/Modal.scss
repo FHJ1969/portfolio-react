@@ -21,6 +21,11 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif;
   position: relative;
+
+  .Modal__content--sectionTitle {
+    font-weight: bold;
+  }
+
 }
 
 .Modal__banner {
@@ -29,9 +34,7 @@
   height: 20vh;
   object-fit: contain;
   margin-bottom: 20px;
-  & > img {
-    border-radius: 15px;
-  }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Modal__content h2 {
@@ -63,7 +66,7 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 38px;
 }
 
 .Modal__close-icon {
