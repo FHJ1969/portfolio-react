@@ -1,6 +1,7 @@
 import './Banner.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLaptopCode} from "@fortawesome/free-solid-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import Background from "../Background/background.jsx";
 
 export default function Banner() {
@@ -12,7 +13,8 @@ export default function Banner() {
                                                                                              style={{margin: "0 25px"}}/>Projets
                 </p>
                 <p data-aos="fade-left" className="BannerContainer__desc">Vous pouvez consulter ici la liste de mes
-                    projets personnels et professionels publiquement disponibles</p>
+                    projets personnels ainsi que professionels publiquement disponibles, en sélectionnant un des projet disponible ci-dessous, une modale spécifiant la mission, la description, la stack du projet ainsi que des liens annexes sera disponible.</p>
+                <a href="https://github.com/FHJ1969" rel="noreferrer" target="_blank" className="GithubLink"><FontAwesomeIcon icon={faGithub} style={{marginRight: "5px"}}/>Profil Github</a>
             </div>
         </div>
     )

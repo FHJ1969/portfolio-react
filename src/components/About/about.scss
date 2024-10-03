@@ -219,3 +219,19 @@ p{
   max-height: 1000px;
   display: block;
 }
+
+.CVlink {
+  display: inline-block;
+  justify-self: center;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  transition: 250ms ease-in-out;
+  &:hover{
+    transform: scale(0.95);
+    background-color: lightgray;
+  }
+}

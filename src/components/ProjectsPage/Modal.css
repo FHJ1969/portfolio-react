@@ -8,8 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
-}
+  z-index: 100; }
 
 .Modal__content {
   background: white;
@@ -20,13 +19,9 @@
   max-width: 1350px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif;
-  position: relative;
-
-  .Modal__content--sectionTitle {
-    font-weight: bold;
-  }
-
-}
+  position: relative; }
+  .Modal__content .Modal__content--sectionTitle {
+    font-weight: bold; }
 
 .Modal__banner {
   border-radius: 15px;
@@ -34,20 +29,17 @@
   height: 20vh;
   object-fit: contain;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
 
 .Modal__content h2 {
   font-size: 35px;
   margin-top: 0;
-  padding: 25px 0;
-}
+  padding: 25px 0; }
 
 .Modal__content p {
   color: black;
   font-size: 18px;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .Modal__content button {
   margin-top: 20px;
@@ -55,19 +47,16 @@
   color: black;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .Modal__content button:hover {
-  background: gray;
-}
+  background: gray; }
 
 .Modal__icons {
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  font-size: 38px;
-}
+  font-size: 38px; }
 
 .Modal__close-icon {
   position: absolute;
@@ -75,12 +64,10 @@
   right: 10px;
   font-size: 24px;
   cursor: pointer;
-  color: black;
-}
+  color: black; }
 
 .Modal__close-icon:hover {
-  color: gray;
-}
+  color: gray; }
 
 .Modal__github {
   margin-top: 25px;
@@ -92,9 +79,9 @@
   padding: 10px;
   display: block;
   transition: 250ms ease-in-out;
-  border-radius: 10px;
-  &:hover {
+  border-radius: 10px; }
+  .Modal__github:hover {
     transform: scale(1.1);
-    background-color: #1D1C1C;
-  }
-}
+    background-color: #1D1C1C; }
+
+/*# sourceMappingURL=Modal.css.map */

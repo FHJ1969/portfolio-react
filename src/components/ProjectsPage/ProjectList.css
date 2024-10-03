@@ -1,16 +1,8 @@
-@mixin hover {
-  transition: 250ms ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-      opacity: 0.8;
-    }
-}
-
 .ProjectList {
   margin-left: 7%;
   background-color: black;
-  padding: 20px 15px;
-  &__project {
+  padding: 20px 15px; }
+  .ProjectList__project {
     margin: 0 1% 5px 1%;
     display: flex;
     align-items: center;
@@ -20,32 +12,28 @@
     transition: 250ms ease-in-out;
     background-color: #141414;
     cursor: pointer;
-    border-radius: 5px;
-    &:hover{
+    border-radius: 5px; }
+    .ProjectList__project:hover {
       background-color: #1E1E1E;
-      height: 60px;
-    }
-
-    &--title {
+      height: 60px; }
+    .ProjectList__project--title {
       font-size: 18px;
       font-family: "Poppins", sans-serif;
       flex: 1;
-      color: white;
-    }
-
-    &--icons {
+      color: white; }
+    .ProjectList__project--icons {
       display: flex;
       gap: 5px;
       color: white;
       margin-right: 10px;
-      font-size: 25px;
-    }
-
-    &--link {
+      font-size: 25px; }
+    .ProjectList__project--link {
       margin: 0 10px 0 3px;
       color: white;
-      @include hover;
-      font-size: 25px;
-    }
-  }
-}
+      transition: 250ms ease-in-out;
+      font-size: 25px; }
+      .ProjectList__project--link:hover {
+        transform: scale(1.1);
+        opacity: 0.8; }
+
+/*# sourceMappingURL=ProjectList.css.map */

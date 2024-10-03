@@ -44,7 +44,9 @@ const ProjectList = () => {
         <div className="ProjectList">
             {projects.map((project, index) => (
                 <div key={index} className="ProjectList__project" onClick={() => openModal(project)}>
-                    <p className="ProjectList__project--title">{project.title}</p>
+                    <p className="ProjectList__project--title">
+                        <FontAwesomeIcon icon={faGlobe} style={{marginRight: '6px'}} />
+                        {project.title}</p>
                     <div className="ProjectList__project--icons">
                         {project.icons.map((iconName, idx) => (
                             <FontAwesomeIcon key={idx} icon={iconMap[iconName]} />

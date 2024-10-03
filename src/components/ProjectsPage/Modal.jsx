@@ -49,8 +49,8 @@ const Modal = ({ project, onClose }) => {
                         <FontAwesomeIcon key={idx} icon={iconMap[iconName]}/>
                     ))}
                 </div>
-                <a href={project.github} className="Modal__github" style={{display: "block", marginTop: "15px"}}>Lien du
-                    repo GitHub</a>
+                <a href={project.github} rel="noreferrer" target="_blank" className="Modal__github"><FontAwesomeIcon icon={faGithub} style={{marginRight: '10px',fontSize: '20px'}}/>
+                    Repo GitHub</a>
                 <FontAwesomeIcon icon={faXmark} onClick={onClose} className="Modal__close-icon"/>
             </div>
         </div>

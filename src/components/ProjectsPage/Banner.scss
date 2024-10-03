@@ -47,12 +47,28 @@
   }
   &__desc{
     @include Text;
-    font-size: 25px;
+    font-size: 18px;
     margin-left: 20px;
-    width: 70%;
-    max-width: 700px;
-    @media (max-width: 1350px) {
-      font-size: 18px;
+    max-width: 900px;
+  }
+  .GithubLink {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 25px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    max-width: 170px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      background-color: lightgray;
     }
   }
 }

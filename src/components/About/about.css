@@ -7,6 +7,9 @@
   .aboutCard:hover {
     transform: scale(0.97) !important;
     opacity: 0.8 !important; }
+  @media (max-width: 1350px) {
+    .aboutCard {
+      border: 3px solid white; } }
 
 p {
   color: white; }
@@ -16,12 +19,21 @@ p {
   width: 100%;
   background-color: transparent;
   height: 100vh; }
+  @media (max-width: 1350px) {
+    .aboutContainer {
+      flex-direction: column;
+      height: auto;
+      background-color: black;
+      width: 81%; } }
   .aboutContainer .aboutContainer__CTA {
-    border-left: 8px solid white;
     margin-left: 7%;
-    padding: 270px 30px;
+    padding: 270px 30px 270px 30px;
     width: 29%;
     background-color: black; }
+    @media (max-width: 1350px) {
+      .aboutContainer .aboutContainer__CTA {
+        width: 100%;
+        padding: 0 30px 270px 30px; } }
     .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--title1 {
       display: inline-block;
       margin-bottom: -40px;
@@ -29,6 +41,13 @@ p {
       font-family: "Bebas Neue", sans-serif;
       -webkit-text-stroke: 2px white;
       color: black; }
+      @media (max-width: 1650px) {
+        .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--title1 {
+          font-size: 130px;
+          margin: 10px 0 -20px; } }
+      @media (max-width: 1350px) {
+        .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--title1 {
+          font-size: 90px; } }
     .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--title2 {
       font-family: "Poppins", sans-serif;
       font-size: 31px;
@@ -37,7 +56,7 @@ p {
       font-family: "Poppins", sans-serif;
       font-size: 20px; }
     .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--link {
-      margin: 100px 0 20px 3%;
+      margin: 100px 0 30px 3%;
       display: inline-block;
       cursor: pointer;
       font-size: 33px;
@@ -50,10 +69,16 @@ p {
       color: black;
       border: 3px solid black;
       background-color: white; }
+      @media (max-width: 1350px) {
+        .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--link {
+          font-size: 25px; } }
       .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--link:hover {
         color: white;
         background-color: black;
         border: 3px solid white; }
+      @media (max-width: 1350px) {
+        .aboutContainer .aboutContainer__CTA .aboutContainer__CTA--link {
+          display: none; } }
   .aboutContainer .aboutContainer__works {
     display: flex;
     justify-content: flex-end;
@@ -73,6 +98,9 @@ p {
       color: white;
       border: 3px solid white;
       background-color: black; }
+      @media (max-width: 1350px) {
+        .aboutContainer .aboutContainer__works .aboutContainer__works--link {
+          font-size: 25px; } }
       .aboutContainer .aboutContainer__works .aboutContainer__works--link:hover {
         color: black;
         background-color: white;
@@ -86,6 +114,11 @@ p {
     width: 50%;
     height: 400px;
     font-family: "Poppins", sans-serif; }
+    @media (max-width: 1350px) {
+      .aboutContainer__boxes {
+        width: 100%;
+        margin: -180px 0 -180px 15%;
+        height: 300px; } }
     .aboutContainer__boxes--big {
       grid-column: 2 / 3;
       grid-row: 1 / 3; }
@@ -111,8 +144,22 @@ p {
     .aboutContainer__boxes--card-text {
       margin: 0;
       color: white; }
+      @media (max-width: 1350px) {
+        .aboutContainer__boxes--card-text {
+          text-align: left;
+          margin: -6px; } }
     .aboutContainer__boxes--card-icon {
       color: white; }
+      @media (max-width: 1350px) {
+        .aboutContainer__boxes--card-icon {
+          display: none; } }
+
+.ExpTitle {
+  font-size: 25px; }
+
+.ExpDesc {
+  font-size: 15px;
+  opacity: 0.6; }
 
 .collapsible {
   margin-bottom: 10px;
@@ -126,10 +173,34 @@ p {
   align-items: center;
   padding: 10px;
   background-color: #f5f5f5;
-  cursor: pointer; }
+  cursor: pointer;
+  color: black; }
 
 .collapsible-content {
   padding: 10px;
-  background-color: #fff; }
+  color: black;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+  transition: all 200ms ease-in-out; }
+
+.collapsible-content.open {
+  max-height: 1000px;
+  display: block; }
+
+.CVlink {
+  display: inline-block;
+  justify-self: center;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px;
+  transition: 250ms ease-in-out; }
+  .CVlink:hover {
+    transform: scale(0.95);
+    background-color: lightgray; }
 
 /*# sourceMappingURL=about.css.map */
