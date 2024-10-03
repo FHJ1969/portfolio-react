@@ -223,6 +223,7 @@ p{
 .CVlink {
   display: inline-block;
   justify-self: center;
+  font-weight: bold;
   background-color: white;
   text-decoration: none;
   color: black;
@@ -234,4 +235,13 @@ p{
     transform: scale(0.95);
     background-color: lightgray;
   }
+}
+
+.CompetencesSoustitre{
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

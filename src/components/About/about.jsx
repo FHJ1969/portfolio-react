@@ -53,23 +53,23 @@ export default function About() {
         <div>
             <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faHammer} style={{marginRight:"10px"}}/>Compétences</h2>
             <div>
-                <div><p style={{fontWeight:"bold"}}>
+                <div><p className="CompetencesSoustitre">
                     <FontAwesomeIcon icon={faCode} style={{marginRight: "10px"}}/>Frontend :</p> HTML, CSS,
                     JavaScript, React, Sass, Scss<br/><br/></div>
-                <div><p style={{fontWeight:"bold"}}>
+                <div><p className="CompetencesSoustitre">
                     <FontAwesomeIcon icon={faDatabase} style={{marginRight: "10px"}}/>Backend :</p> Node.js, Express,
                     MongoDB, RESTful APIs, noSQL<br/><br/>
                 </div>
-                <div><p style={{fontWeight:"bold"}}>
+                <div><p className="CompetencesSoustitre">
                     <FontAwesomeIcon icon={faTools} style={{marginRight: "10px"}}/>Outils :</p> Git, Github, Postman, VSCode,
                     Webstorm, Figma, Canva, Slack, Notion, Trello, Microsoft 365, Linux (Debian)<br/><br/>
                 </div>
-                <div><p style={{fontWeight:"bold"}}>
+                <div><p className="CompetencesSoustitre">
                     <FontAwesomeIcon icon={faChartBar} style={{marginRight: "10px"}}/>Méthodes :</p> Agile, Scrum,
                     Cascade, POO<br/><br/>
                 </div>
                 <div>
-                    <p style={{fontWeight:"bold"}}><FontAwesomeIcon icon={faChartSimple} style={{marginRight: "10px"}} />
+                    <p className="CompetencesSoustitre"><FontAwesomeIcon icon={faChartSimple} style={{marginRight: "10px"}} />
                         Marketing digital:</p> SEO, Google Search Console,
                      Google Analytics, Google Rich Snippets, Google Ads, Facebook Ads, Lighouse, Wave
 
@@ -80,7 +80,7 @@ export default function About() {
 
     const renderCVContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faNewspaper} style={{marginRight:"10px"}}/>Curriculum Vitae</h2>
+            <h2 className="CompetencesSoustitre" style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faNewspaper} style={{marginRight:"10px"}}/>Curriculum Vitae</h2>
             <p>Cliquez sur le lien ci-dessous pour avoir accès au PDF de mon CV :</p>
             <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:f6817c6f-26b3-410a-8842-5bc824db9090?viewer!megaVerb=group-discover" target="_blank" rel="noopener noreferrer"
             className="CVlink">
@@ -90,7 +90,7 @@ export default function About() {
 
     const renderHobbiesContent = () => (
         <div>
-            <h2 style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faBook} style={{marginRight:"10px"}}/>Diplômes et expériences</h2>
+            <h2 className="CompetencesSoustitre" style={{marginBottom:"20px"}}><FontAwesomeIcon icon={faBook} style={{marginRight:"10px"}}/>Diplômes et expériences</h2>
             <ul style={{marginLeft: "20px"}}>
                 <li>Diplômes</li>
                 <p className="ExpTitle">Baccalauréat général (2022)</p>
@@ -106,7 +106,7 @@ export default function About() {
 
     const renderMoiContent = () => (
         <div>
-            <h2 style={{marginBottom: "20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
+            <h2 className="CompetencesSoustitre" style={{marginBottom: "20px"}}><FontAwesomeIcon icon={faCircleUser} style={{marginRight:"10px"}}/>À propos de moi</h2>
             <p>
                 Programmeur fullstack junior de 19ans,
                 avec une solide compréhension des intéractions front-end et back-end.<br/><br/>
