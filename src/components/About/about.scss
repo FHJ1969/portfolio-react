@@ -23,12 +23,15 @@
 
 .aboutCard {
   @include cards;
+  background-position: center;
+  background-repeat: no-repeat;
   &:hover {
     transform: scale(0.97) !important;
     opacity: 0.8 !important;
   }
   @media (max-width: 1350px) {
     border: 3px solid white;
+    background-image: none !important;
   }
 }
 
@@ -244,4 +247,28 @@ p{
   padding: 5px 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+//Carte compétences
+.Card1 {
+  background-image: url("src/assets/robotarm.webp");
+  background-size: 40% 45%;
+}
+
+//Carte Moi
+.Card2 {
+  background-image: url("src/assets/boulemagique.webp");
+  background-size: 25% 55%;
+}
+
+//Carte Exp
+.Card3 {
+  background-image: url("src/assets/graduation.webp");
+  background-size: 40% 45%;
+}
+
+//Carte CV
+.Card4 {
+  background-image: url("src/assets/pen.webp");
+  background-size: 40% 45%;
 }

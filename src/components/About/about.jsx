@@ -131,14 +131,14 @@ export default function About() {
                 </div>
 
                 <div className="aboutContainer__boxes">
-                    <div className="aboutContainer__boxes--big aboutCard" data-aos="zoom-out-left" onClick={() => handleCardClick('competences')}>
+                    <div className="aboutContainer__boxes--big aboutCard Card1" data-aos="zoom-out-left" onClick={() => handleCardClick('competences')}>
                         <div className="aboutContainer__boxes--card-footer">
                             <p className="aboutContainer__boxes--card-text">Compétences</p>
                             <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faSwatchbook} />
                         </div>
                     </div>
 
-                    <div className="aboutContainer__boxes--medium aboutCard" data-aos="fade-down" onClick={() => handleCardClick('moi')}>
+                    <div className="aboutContainer__boxes--medium aboutCard Card2" data-aos="fade-down" onClick={() => handleCardClick('moi')}>
                         <div className="aboutContainer__boxes--card-footer">
                             <p className="aboutContainer__boxes--card-text">Moi</p>
                             <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faUser}/>
@@ -146,14 +146,14 @@ export default function About() {
                     </div>
 
                     <div className="aboutContainer__boxes--small">
-                        <div className="aboutContainer__boxes--small1 aboutCard" data-aos="fade-right" onClick={() => handleCardClick('hobbies')}>
+                        <div className="aboutContainer__boxes--small1 aboutCard Card3" data-aos="fade-right" onClick={() => handleCardClick('hobbies')}>
                             <div className="aboutContainer__boxes--card-footer">
                                 <p className="aboutContainer__boxes--card-text">Exp</p>
                                 <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faBook} />
                             </div>
                         </div>
 
-                        <div className="aboutContainer__boxes--small1 aboutCard" data-aos="fade-up" onClick={() => handleCardClick('cv')}>
+                        <div className="aboutContainer__boxes--small1 aboutCard Card4" data-aos="fade-up" onClick={() => handleCardClick('cv')}>
                             <div className="aboutContainer__boxes--card-footer">
                                 <p className="aboutContainer__boxes--card-text">CV</p>
                                 <FontAwesomeIcon className="aboutContainer__boxes--card-icon" icon={faAddressCard} />

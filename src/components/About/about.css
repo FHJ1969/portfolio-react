@@ -3,13 +3,16 @@
   background: black;
   border-radius: 10px;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat; }
   .aboutCard:hover {
     transform: scale(0.97) !important;
     opacity: 0.8 !important; }
   @media (max-width: 1350px) {
     .aboutCard {
-      border: 3px solid white; } }
+      border: 3px solid white;
+      background-image: none !important; } }
 
 p {
   color: white; }
@@ -211,5 +214,21 @@ p {
   padding: 5px 10px;
   margin-bottom: 10px;
   border-radius: 5px; }
+
+.Card1 {
+  background-image: url("src/assets/robotarm.webp");
+  background-size: 40% 45%; }
+
+.Card2 {
+  background-image: url("src/assets/boulemagique.webp");
+  background-size: 25% 55%; }
+
+.Card3 {
+  background-image: url("src/assets/graduation.webp");
+  background-size: 40% 45%; }
+
+.Card4 {
+  background-image: url("src/assets/pen.webp");
+  background-size: 40% 45%; }
 
 /*# sourceMappingURL=about.css.map */
