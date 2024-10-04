@@ -216,19 +216,19 @@ p {
   border-radius: 5px; }
 
 .Card1 {
-  background-image: url("src/assets/robotarm.webp");
+  background-image: url("https://i.ibb.co/7bSKSyf/robotarm.webp");
   background-size: 40% 45%; }
 
 .Card2 {
-  background-image: url("src/assets/boulemagique.webp");
+  background-image: url("https://i.ibb.co/ftb3vCS/boulemagique.webp");
   background-size: 25% 55%; }
 
 .Card3 {
-  background-image: url("src/assets/graduation.webp");
+  background-image: url("https://i.ibb.co/pRCqLBq/graduation.webp");
   background-size: 40% 45%; }
 
 .Card4 {
-  background-image: url("src/assets/pen.webp");
+  background-image: url("https://i.ibb.co/2S3vzzY/pen.webp");
   background-size: 40% 45%; }
 
 /*# sourceMappingURL=about.css.map */
