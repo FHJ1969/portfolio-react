@@ -18,11 +18,7 @@ p {
   display: flex;
   width: 100%;
   background-color: transparent;
-  height: 100vh;
-
-  @media (max-width:1650px) {
-    height: 130vh;
-  }
+  height: auto;
   @media (max-width: 1350px) {
     flex-direction: column;
     height: auto;
@@ -30,7 +26,7 @@ p {
 
   .contactContainer__CTA {
     margin-left: 7%;
-    padding: 270px 30px;
+    padding: 570px 30px;
     width: 29%;
     background-color: black;
     @media (max-width: 1350px) {
@@ -71,7 +67,7 @@ p {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
-    margin: 150px auto;
+    margin: 150px auto 20px auto;
     width: 400px;
     height: fit-content;
     @media (max-width: 1350px) {

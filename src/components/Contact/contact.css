@@ -5,13 +5,20 @@ p {
   display: flex;
   width: 100%;
   background-color: transparent;
-  height: 100vh; }
+  height: auto; }
+  @media (max-width: 1350px) {
+    .contactContainer {
+      flex-direction: column;
+      height: auto; } }
   .contactContainer .contactContainer__CTA {
-    border-left: 8px solid white;
     margin-left: 7%;
-    padding: 270px 30px;
+    padding: 570px 30px;
     width: 29%;
     background-color: black; }
+    @media (max-width: 1350px) {
+      .contactContainer .contactContainer__CTA {
+        width: 80%;
+        padding: 270px 30px 0 30px; } }
     .contactContainer .contactContainer__CTA .contactContainer__CTA--title1 {
       display: inline-block;
       margin: 10px 0 -20px;
@@ -19,6 +26,9 @@ p {
       font-family: "Bebas Neue", sans-serif;
       -webkit-text-stroke: 2px white;
       color: black; }
+      @media (max-width: 1650px) {
+        .contactContainer .contactContainer__CTA .contactContainer__CTA--title1 {
+          font-size: 90px; } }
     .contactContainer .contactContainer__CTA .contactContainer__CTA--title2 {
       font-family: "Poppins", sans-serif;
       font-size: 31px;
@@ -35,12 +45,19 @@ p {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
     border-radius: 10px;
-    margin: 150px 300px;
+    margin: 150px auto 20px auto;
     width: 400px;
     height: fit-content; }
+    @media (max-width: 1350px) {
+      .contactContainer .contactContainer__formContainer {
+        width: 60%;
+        padding: -120px 0 0 40px; } }
     .contactContainer .contactContainer__formContainer--title {
       font-family: "Bebas Neue", sans-serif;
       font-size: 39px; }
+      @media (max-width: 1350px) {
+        .contactContainer .contactContainer__formContainer--title {
+          font-size: 31px; } }
     .contactContainer .contactContainer__formContainer--underTitle {
       font-family: "Poppins", sans-serif;
       font-size: 12px;
@@ -79,7 +96,6 @@ p {
       flex-wrap: nowrap;
       background-color: #000;
       color: #fff;
-      border: none;
       border-radius: 5px;
       height: 59px; }
       .contactContainer .contactContainer__formContainer button:hover {
@@ -92,5 +108,12 @@ p {
 
 .textBox {
   font-family: "Poppins", sans-serif; }
+
+.msgError {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: lightcoral;
+  margin-bottom: 15px;
+  text-align: center; }
 
 /*# sourceMappingURL=contact.css.map */
