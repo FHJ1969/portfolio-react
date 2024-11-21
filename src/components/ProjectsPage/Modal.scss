@@ -21,6 +21,10 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", sans-serif;
   position: relative;
+  @media (max-width: 1350px) {
+    width: 70%;
+    padding: 20px
+  }
 
   .Modal__content--sectionTitle {
     font-weight: bold;
@@ -35,18 +39,27 @@
   object-fit: contain;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  @media (max-width: 1350px) {
+    display: none;
+  }
 }
 
 .Modal__content h2 {
   font-size: 35px;
   margin-top: 0;
   padding: 25px 0;
+  @media (max-width: 1350px) {
+    margin-top: -20px;
+  }
 }
 
 .Modal__content p {
   color: black;
   font-size: 18px;
   margin-bottom: 15px;
+  @media (max-width: 1350px) {
+    font-size: 11px;
+  }
 }
 
 .Modal__content button {

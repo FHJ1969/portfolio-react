@@ -43,6 +43,8 @@ const Modal = ({ project, onClose }) => {
                 <p>{project.description}</p>
                 <p className="Modal__content--sectionTitle">Description :</p>
                 <p>{project.text}</p>
+                <p className="Modal__content--sectionTitle">Problème(s) recontré(s) :</p>
+                <p>{project.problem}</p>
                 <p className="Modal__content--sectionTitle">Stack du projet :</p>
                 <div className="Modal__icons">
                     {project.icons.map((iconName, idx) => (
